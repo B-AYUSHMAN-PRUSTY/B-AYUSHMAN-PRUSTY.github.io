@@ -1,0 +1,199 @@
+body {
+  background: radial-gradient(circle at center, #313131, #000000);
+}
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes nav-animation {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+
+#about {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#work {
+  animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#contact {
+  animation: bounce-in 1s;
+}
+
+@keyframes bounce-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+#about {
+  text-align: center;
+}
+#about h1{
+  color: rgb(160, 160, 160);
+}
+#about h1:hover{
+  color: red;
+}
+#about h2{
+  color: rgb(224, 224, 224);
+}
+
+#about i {
+  font-size: 32px;
+  color: rgb(168, 168, 168);
+  margin: 0 10px;
+}
+
+#about a:hover i {
+  color: #ff0000; 
+}
+#profile {
+  text-align: center;
+  margin: 50px 0;
+}
+
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: profile-pic-animation 1s;
+}
+
+@keyframes profile-pic-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#profile-name {
+  margin-top: 20px;
+  font-size: 32px;
+  animation: profile-name-animation 1s;
+  color: rgb(168, 168, 168);
+}
+
+@keyframes profile-name-animation {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#work {
+  color: rgb(160, 160, 160);
+  text-align: center;
+}
+#work h1:hover{
+  color: red;
+}
+
+#work ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#work li {
+  display: inline-block;
+  margin: 10px;
+  animation: project-animation 1s;
+}
+
+#work img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s ease;
+}
+
+#work img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes project-animation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+#contact {
+  color: rgb(160, 160, 160);
+  text-align: center;
+}
+#contact-info:hover{
+  color: red;
+}
+
+#contact-info {
+  animation: contact-animation 1s;
+}
+
+@keyframes contact-animation {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+ 
+
+
+
+  
